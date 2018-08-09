@@ -114,9 +114,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="labratory" translatesAutoresizingMaskIntoConstraints="NO" id="FCS-Vz-eU2">
-                                <rect key="frame" x="0.0" y="64" width="414" height="476"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="labratory" translatesAutoresizingMaskIntoConstraints="NO" id="FCS-Vz-eU2">
+                                <rect key="frame" x="0.0" y="64" width="414" height="512"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SxE-ke-5Ce">
                                 <rect key="frame" x="172.66666666666666" y="686" width="69" height="30"/>
@@ -128,6 +127,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="FCS-Vz-eU2" firstAttribute="trailing" secondItem="FCJ-pB-yOH" secondAttribute="trailing" id="Ihw-aY-JJd"/>
+                            <constraint firstItem="FCS-Vz-eU2" firstAttribute="top" secondItem="FCJ-pB-yOH" secondAttribute="top" id="PSF-Q7-aDH"/>
+                            <constraint firstItem="FCS-Vz-eU2" firstAttribute="leading" secondItem="FCJ-pB-yOH" secondAttribute="leading" id="aIC-tl-yas"/>
                             <constraint firstItem="FCJ-pB-yOH" firstAttribute="bottom" secondItem="SxE-ke-5Ce" secondAttribute="bottom" constant="20" id="lmG-7r-zVl"/>
                             <constraint firstItem="SxE-ke-5Ce" firstAttribute="centerX" secondItem="uol-jG-ACe" secondAttribute="centerX" id="vnM-uQ-URa"/>
                         </constraints>
@@ -202,11 +204,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mysterious_lake" translatesAutoresizingMaskIntoConstraints="NO" id="yYN-bt-f8Q">
                                 <rect key="frame" x="0.0" y="64" width="414" height="512"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIS-pj-g6M">
-                                <rect key="frame" x="30" y="103" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwR-tz-YdK">
                                 <rect key="frame" x="156" y="676" width="102" height="30"/>
                                 <state key="normal" title="Cursed chalice"/>
@@ -242,25 +239,22 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secret_passage" translatesAutoresizingMaskIntoConstraints="NO" id="fun-3x-NkO">
                                 <rect key="frame" x="0.0" y="64" width="414" height="500"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dcy-9p-eHU">
-                                <rect key="frame" x="176" y="510" width="63" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dcy-9p-eHU">
+                                <rect key="frame" x="176" y="586" width="63" height="30"/>
                                 <state key="normal" title="Dungeon"/>
                                 <connections>
                                     <segue destination="pK5-zP-erh" kind="show" id="ygy-3p-dSW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2t-ga-Xa9">
-                                <rect key="frame" x="170" y="581" width="75" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2t-ga-Xa9">
+                                <rect key="frame" x="170" y="636" width="75" height="30"/>
                                 <state key="normal" title="Laboratory"/>
                                 <connections>
                                     <segue destination="PxC-0x-4ed" kind="show" id="1xd-c1-kmG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVX-Dy-kgl">
-                                <rect key="frame" x="152" y="656" width="112" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVX-Dy-kgl">
+                                <rect key="frame" x="151" y="686" width="112" height="30"/>
                                 <state key="normal" title="Mysterious Lake"/>
                                 <connections>
                                     <segue destination="eUn-o8-aEL" kind="show" id="fWB-kn-dsP"/>
@@ -269,9 +263,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="s2t-ga-Xa9" firstAttribute="centerX" secondItem="0ea-nV-Nww" secondAttribute="centerX" id="9xS-YA-TB5"/>
                             <constraint firstItem="fun-3x-NkO" firstAttribute="leading" secondItem="qZ6-jr-qpj" secondAttribute="leading" id="Btm-Uh-N5G"/>
+                            <constraint firstItem="tVX-Dy-kgl" firstAttribute="centerX" secondItem="0ea-nV-Nww" secondAttribute="centerX" id="DOP-gC-p41"/>
+                            <constraint firstItem="fun-3x-NkO" firstAttribute="centerX" secondItem="0ea-nV-Nww" secondAttribute="centerX" id="OVM-UW-3tD"/>
+                            <constraint firstItem="tVX-Dy-kgl" firstAttribute="top" secondItem="s2t-ga-Xa9" secondAttribute="bottom" constant="20" id="XOO-Dn-0AS"/>
                             <constraint firstItem="fun-3x-NkO" firstAttribute="top" secondItem="qZ6-jr-qpj" secondAttribute="top" id="ep6-z8-gwh"/>
+                            <constraint firstItem="qZ6-jr-qpj" firstAttribute="bottom" secondItem="tVX-Dy-kgl" secondAttribute="bottom" constant="20" id="mTO-kO-ULH"/>
                             <constraint firstItem="fun-3x-NkO" firstAttribute="trailing" secondItem="qZ6-jr-qpj" secondAttribute="trailing" id="puq-mq-o1E"/>
+                            <constraint firstItem="s2t-ga-Xa9" firstAttribute="top" secondItem="Dcy-9p-eHU" secondAttribute="bottom" constant="20" id="rgC-OE-KOU"/>
+                            <constraint firstItem="Dcy-9p-eHU" firstAttribute="centerX" secondItem="0ea-nV-Nww" secondAttribute="centerX" id="vdm-rC-Nle"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qZ6-jr-qpj"/>
                     </view>
@@ -478,7 +479,7 @@
                             <constraint firstItem="rft-yH-xBz" firstAttribute="bottom" secondItem="T2I-dG-GF0" secondAttribute="bottom" constant="50" id="JCR-UR-b4o"/>
                             <constraint firstItem="pM0-SC-gA4" firstAttribute="centerX" secondItem="5q7-mT-bxD" secondAttribute="centerX" id="JeK-39-1fV"/>
                             <constraint firstItem="T2I-dG-GF0" firstAttribute="centerX" secondItem="5q7-mT-bxD" secondAttribute="centerX" id="LDA-uo-TzH"/>
-                            <constraint firstItem="pM0-SC-gA4" firstAttribute="bottom" secondItem="Wj0-0x-2Zu" secondAttribute="bottom" constant="10" id="NNy-ru-R7a"/>
+                            <constraint firstItem="Wj0-0x-2Zu" firstAttribute="top" secondItem="rft-yH-xBz" secondAttribute="top" id="LsT-01-K1s"/>
                             <constraint firstItem="ocd-Sp-jSi" firstAttribute="centerX" secondItem="5q7-mT-bxD" secondAttribute="centerX" id="TXy-XH-b1F"/>
                             <constraint firstItem="ocd-Sp-jSi" firstAttribute="top" secondItem="pM0-SC-gA4" secondAttribute="bottom" constant="20" id="UCL-16-2GM"/>
                             <constraint firstItem="Wj0-0x-2Zu" firstAttribute="leading" secondItem="rft-yH-xBz" secondAttribute="leading" id="itz-M8-3yj"/>
